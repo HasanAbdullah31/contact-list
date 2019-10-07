@@ -1,4 +1,5 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).<br>
+Check out the deployed version on Heroku [here](https://hasan-contact-list.herokuapp.com/).
 
 ## Available Scripts
 

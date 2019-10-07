@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap');
+
+html, body {
+    font-family: 'Open Sans', sans-serif;
+    min-width: 320px;
+    overflow: auto;
+    width: 100%;
+}
+
+#contact-list-app button {
+    background: 0;
+    border: 0;
+    outline: 0;
+}
+#contact-list-app button:hover {
+    background-color: #F5F5F5;
+}
+
+#contact-list-app .circle {
+    background-color: #000000;
+    background-size: cover;
+    border-radius: 200px;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header, #contact-list {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+#header {
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+#header #add-contact-btn {
+    color: #606060;
+}
+
+#header hr {
+    border-color: #C0C0C0;
+}
+
+#contact-list {
+    padding-bottom: 4.5rem;
+}
+
+#contact-list .contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+#contact-list .contact:hover {
+    background-color: #F5F5F5;
+}
+
+#contact-list .contact .pic {
+    padding-left: 0;
+}
+
+#contact-list .contact .pic .circle {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+    height: 64px;
+    width: 64px;
+}
+
+#contact-list .contact .info {
+    overflow: auto;
+    padding-left: 2.75rem;
+    width: 100%;
+}
+
+#contact-list .contact .info .name {
+    font-size: 1.75rem;
+    font-weight: 550;
+}
+
+#contact-list .contact .info .email {
+    font-size: 1.25rem;
+}
+
+#contact-list .contact .btns {
+    padding-right: 0;
+    visibility: hidden;
+}
+#contact-list .contact:hover .btns {
+    visibility: visible;
+}
+
+#contact-list .contact .btns .float-box {
+    float: right;
+}
+
+#contact-list .contact .btns .float-box .edit-contact-btn {
+    color: #4AA6FF;
+}
+
+#contact-list .contact .btns .float-box .del-contact-btn {
+    color: #FF4C4C;
+}
+
+.modal-backdrop {
+    background-color: #132424;
+}
+
+#contact-modal .modal-content {
+    margin-top: 12rem;
+    padding: 2.5rem 3.5rem;
+}
+
+#contact-modal .modal-header {
+    border: 0;
+    margin: 0 0 3.5rem 0;
+    padding: 0;
+}
+
+#contact-modal .modal-header .modal-btn {
+    color: #689898;
+    font-size: 1.75rem;
+    padding: 0.5rem;
+}
+
+#contact-modal .modal-body {
+    padding: 0;
+    height: 350px; /* changes in @media only screen and (max-width: 480px) { ... } */
+}
+
+#contact-modal .modal-body input {
+    border: 0;
+    border-bottom: 1px solid #C0C0C0;
+    border-radius: 0;
+    outline: 0;
+    width: 100%;
+}
+
+#contact-modal .modal-body .info-box {
+    margin-bottom: 2.5rem;
+    padding: 0;
+}
+
+#contact-modal .modal-body .info-box .info {
+    padding: 0;
+}
+
+#contact-modal .modal-body .info-box .info .circle {
+    background-color: #437F7F;
+    margin: 0 auto 1.5rem auto;
+    height: 92px;
+    width: 92px;
+}
+#contact-modal .modal-body .info-box .info .circle:hover {
+    background-color: #3C7272;
+    cursor: pointer;
+}
+
+#contact-modal .modal-body .info-box .info label {
+    color: #689898;
+    font-size: 1.5rem;
+    width: 15%;
+}
+#contact-modal .modal-body .info-box .info label + input {
+    width: 85%;
+}
+
+@media only screen and (max-width: 480px) {
+    #contact-modal .modal-body {
+        height: 400px;
+    }
+
+    #contact-modal .modal-body .info-box .info label {
+        width: 100%;
+    }
+    #contact-modal .modal-body .info-box .info label + input {
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "name": "contact-list",
+    "version": "1.0.0",
+    "license": "MIT",
+    "description": "Contact list web site, created using create-react-app.",
+    "author": "Hasan Abdullah <hasanabdullah31415@gmail.com>",
+    "main": "index.js",
+    "private": true,
+    "engines": {
+        "npm": "6.11.3",
+        "node": "10.16.3"
+    },
+    "dependencies": {
+        "jquery": "^3.4.1",
+        "react": "^16.10.1",
+        "react-dom": "^16.10.1",
+        "react-scripts": "3.1.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test",
+        "eject": "react-scripts eject"
+    },
+    "eslintConfig": {
+        "extends": "react-app"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all",
+            "ie 11"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version",
+            "ie 11"
+        ]
+    }
+}
